@@ -1,0 +1,21 @@
+{
+  "name": "asciidoctor-fast-live-reload",
+  "homepage": "https://github.com/Mogztter/asciidoctor-fast-live-reload",
+  "authors": [
+    "Guillaume Grossetie <ggrossetie@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "asciidoctor.js": "~1.5.2"
+  }
+}

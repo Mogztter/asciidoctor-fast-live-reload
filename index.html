@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <style>
+      .left {
+        float: left;
+        width: 50%;
+      }
+      .left textarea {
+        width: 100%;
+        height: 100%;
+      }
+      .right {
+        float: right;
+        width: 49%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">
+     <textarea id="textarea">
+= Title
+:icons: font
+:data-uri: true
+
+## First section
+
+Here is an unordered list
+
+ * a
+ ** aa
+ * b
+ * c
+
+Here is a numbered list
+
+ 1. One
+ 2. Two
+ 3. Three
+
+> I hold it that a little rebellion now and then is a good thing,
+> and as necessary in the political world as storms in the physical.
+> -- Thomas Jefferson, Papers of Thomas Jefferson: Volume 11
+
+```javascript
+alert("hello world");
+```
+
+*bold* and single b**o**ld.
+_italic_ and single i__t__alic.
+
+*_bold italic phrase_*
+
+^super^script phrase
+
+~sub~script phrase
+
+[.lead]
+This text will be styled as a lead paragraph (i.e., larger font).
+
+https://asciidoctor.org - automatic!
+
+http://asciidoctor.org[Asciidoctor]
+
+https://github.com/asciidoctor[Asciidoctor @ *GitHub*]
+
+== Second section
+
+This is a {link}[link]. This is another link http://www.google.fr[Google]
+
+.Table Title
+[cols="2*", options="header"]
+|===
+|Name of Column 1 |Name of Column 2 |Name of Column 3
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|===
+
+NOTE: Note that...
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+
+      </textarea>
+    </div>
+    <div class="right">
+      <div id="output"></div>
+    </div>
+    <script src="bower_components/asciidoctor.js/dist/asciidoctor-all.js"></script>
+    <script src="app.js"/></script>
+  </body>
+</html>
